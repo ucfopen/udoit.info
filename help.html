@@ -1,0 +1,154 @@
+---
+layout: default
+title: "UDOIT: Accessibility Scanning Tool for Online Course Content"
+---
+
+<!-- roadmap was remade into help page -->
+{% include header.html activePage="help"%}
+<div class="main-page-section-no-underline">
+  <div class="page-width flex-row justify-content-between h-100">
+    <div id="roadmap-hero-text"  class="hero-text-content flex-column justify-content-center pb-2">
+      <h2 id="main-header">Help & FAQs</h2>
+      <p class="text-center">We understand UDOIT can be a learning curve, but we’re here to help. Here are some of our main questions and issues encountered while using UDOIT. This may also include upcoming features, enhancements, and fixes.</p>
+    </div>
+  </div>
+</div>
+<main class="flex-row justify-content-between page-width">
+  <div id="main-content" class="flex-column flex-grow-1">
+    <section class="main-page-section">
+      <details>
+        <summary>
+          <span role="term" aria-details="issues-checked">What is an accessibility barrier?</span>
+        </summary>
+        <p>In online course content like in Canvas, an accessibility barrier occurs when things are created in such a way that certain users cannot access the same information or experiences that other users can.</p>
+        <p>One example is having subtitles, captions, or transcripts alongside digital videos. Without captions, <em>most</em> users can simply watch the video, but <em>some</em> users-- those with hearing impediments-- will not be able to access the same information. Captions provide them an equivalent experience.</p>
+        <p>Another example is attaching alternative text descriptions to images. When images contain important information, they should be clearly described in text form. That way, users who cannot see the image, whether for physical or technical reasons, can still understand what the image is trying to convey.</p>
+        <p>Most accessibility barriers are invisible to content creators, and require tools like UDOIT to help find and address them.</p>
+    </details>
+
+  <details>
+      <summary>
+        <span role="term" aria-details="issues-checked">Who does UDOIT help?</span>
+      </summary>
+      <p>Accessibility barriers that UDOIT can detect and help resolve don't only affect users with disabilities. Creating accessible content can benefit all users. Consider the following examples:</p>
+      <ul>
+          <li>Ensuring high contrast between colors benefits:
+              <ul>
+                  <li>Those with vision impairments or low vision</li>
+                  <li>Those in less-than-ideal circumstances, like poor lighting or outside on mobile devices</li>
+              </ul>
+          </li>
+          <li>Adding alternative text to images benefits:
+              <ul>
+                  <li>Those dependent on screen readers</li>
+                  <li>Users with insufficient network bandwidth where images fail to load</li>
+              </ul>
+          </li>
+          <li>Ensuring that all links contain self-descriptive text benefits:
+              <ul>
+                  <li>Those dependent on screen readers</li>
+                  <li>Those with cognitive disabilities or difficulty understanding</li>
+                  <li>Those with motor disabilities or who rely on keyboards to navigate</li>
+                  <li>All users who use links to navigate</li>
+              </ul>
+          </li>
+      </ul>
+  </details>
+
+  <details>
+      <summary>
+        <span role="term" aria-details="issues-checked">What is the difference between an "issue" and "potential issue" in UDOIT?</span>
+      </summary>
+      <p>The UDOIT scanner is often able to definitively identify accessibility issues. For example, a computer can decide whether two colors have sufficient contrast or whether an HTML table has been formatted correctly.</p>
+      <p>But often, accessibility rules are conditional. For example, headings must be formatted in a specific way, but the scanner can't tell whether any particular text is intended to be a header or is just a short paragraph.</p>
+      <p>When UDOIT identifies a "potential issue," it will require some user input to determine what, if anything, needs to be done.</p>
+  </details>
+
+  <details>
+      <summary>
+        <span role="term" aria-details="issues-checked">What sorts of accessibility barriers does UDOIT find and help me resolve?</span>
+      </summary>
+      <p>UDOIT finds a wide range of issues, and can detect <em>most</em> barriers listed in the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibilty Guidelines</a>. Specific barriers include:</p>
+      <ul>
+          <li>HTML Element has an Incompatible ARIA Role</li>
+          <li>IDs Must Be Referenced Correctly</li>
+          <li>Images Should Have Alternative Text</li>
+          <li>Information Should Not be Conveyed by Color Alone</li>
+          <li>Instructions Should Not Rely on Shape, Size, or Location</li>
+          <li>Interactive and Landmark Areas Should Have Labels</li>
+          <li>Labels Should Be Unique</li>
+          <li>Languages Should be Specified Correctly</li>
+          <li>Links Should Contain Descriptive Text</li>
+          <li>Lists Should Have Proper List Markup</li>
+          <li>Media Should Have Captions and Transcripts</li>
+          <li>Tables Should Have Descriptive Captions</li>
+          <li>Tables with Data Should Have Headers</li>
+          <li>Text Must Have Sufficient Color Contrast with the Background</li>
+      </ul>
+  </details>
+
+  <details>
+      <summary>
+        <span role="term" aria-details="issues-checked">Where does UDOIT fit alongside other accessibility tools like Canvas Accessibility Checker?</span>
+      </summary>
+      <p>There are many different tools available to help improve online accessibility. Each tool has strengths and weaknesses, and are designed for different use cases.</p>
+      <table>
+          <thead>
+              <tr>
+                  <th scope="col">Tool</th>
+                  <th scope="col">Where to Use</th>
+                  <th scope="col">When to Use</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th>Accessibility Checker Widget</th>
+                  <td>Within Canvas on the "Edit" page</td>
+                  <td>Every time you create or edit a page</td>
+              </tr>
+              <tr>
+                  <th>In-app Accessibility Tools</th>
+                  <td>Within other apps, like Word or PowerPoint</td>
+                  <td>Before saving or exporting a file</td>
+              </tr>
+              <tr>
+                  <th>UDOIT</th>
+                  <td>Within Canvas as an app plugin</td>
+                  <td>Before publishing an entire course, between semesters, or when course-wide reporting data is needed</td>
+              </tr>
+          </tbody>
+      </table>
+  </details>
+
+    </section>
+
+    <section class="main-page-section-no-underline">
+      <h2 id="main-header">If you're not yet using UDOIT:</h2>
+
+      <!-- for educators at ucf -->
+
+      <div class="infoCard first-infoCard">
+        <h3 id="infoCardTitle" class="border-bott-dash">For Educators at UCF</h3>
+        <p>Setting up UDOIT within your course is easy! Ask your Instructional Designer to enable UDOIT within your course, or to connect you with someone on the UDOIT team. Once UDOIT has been imported, it’s as simple as clicking “scan”!</p>
+        <div class="getstarted flex-row">
+          <p>Start scanning your course today.</p>
+          <a href="guide.html" class="infobutton help-infobutton">See UDOIT Tutorials</a>
+        </div>
+      </div>
+
+      <!-- for educators not at ucf -->
+
+      <div class="infoCard"> 
+        <h3 id="infoCardTitle" class="border-bott-dash">For Educators not at UCF</h3>
+        <p>Ready to Do It? We would love to work with you! Submit an inquiry, or follow the installation instructions on our website to begin setting up UDOIT for your institution.</p>
+        <div class="getstarted flex-row">
+          <p>Join hundreds of instructors today and improve your courses with ease.</p>
+          <a href="#" class="infobutton help-infobutton">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+  </html>
+</main>
+{% include footer.html img="/img/jfootawNOguyfind.svg" %}

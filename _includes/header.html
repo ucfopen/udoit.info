@@ -1,17 +1,19 @@
 <header>
   <nav class="flex-row justify-content-between">
-    <div id="image-logo" style="font-weight: bold; font-size: 1.5rem;" aria-label="UDOIT Logo" role="img"></div>
+    <!-- <div id="udoit-logo-green" style="font-weight: bold; font-size: 1.5rem;" aria-label="UDOIT Logo" role="img"></div> -->
+    <a id="udoit-logo-green" href="index.html" style="font-weight: bold; font-size: 1.5rem;" aria-label="UDOIT Logo" role="img"></a>
     <div class="flex-row gap-4">
       <ul>
-        <li {% if include.activePage == 'features' %}class="active"{% endif %}><a href="./index.html">Features</a></li>
-        <li {% if include.activePage == 'guide' %}class="active"{% endif %}><a href="./guide.html">User Guide</a></li>
-        <li {% if include.activePage == 'installation' %}class="active"{% endif %}><a href="./installation.html">Installation</a></li>
-        <li {% if include.activePage == 'roadmap' %}class="active"{% endif %}><a href="./roadmap.html">Roadmap</a></li>
+        <li {% if include.activePage == 'features' %}class="active"{% endif %}><a href="./index.html">home</a></li>
+        <li {% if include.activePage == 'installation' %}class="active"{% endif %}><a href="./getudoit.html">get udoit</a></li>
+        <li {% if include.activePage == 'help' %}class="active"{% endif %}><a href="./help.html">help</a></li>
       </ul>
+    </div>
+    <div class="checkbox-container">
       <div class="checkbox">
         <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle dark mode" />
         <label></label>
-      </div>
+    </div>
     </div>
   </nav>
 </header>
