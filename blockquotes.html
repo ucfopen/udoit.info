@@ -4,11 +4,23 @@ title: "UDOIT: Accessibility Scanning Tool for Online Course Content"
 ---
 
 <!-- roadmap was remade into help page -->
-{% include header.html activePage="help"%}
+{% include header.html activePage="installation"%}
 <main>
 <html>
     <body>
-        <p>there's nothing here.</p>
+        <section class="page-width"><iframe class="tutvideo"></iframe></section>
+        <section class="flex-col page-width">
+            <h2>Blockquotes Must Have a Citation</h2>
+            <div>
+                <p>The "Blockquotes Must Have a Citation" error indicates a section that was quoted from another source does not contain its necessary citation.</p>
+                <p>Blockquote elements tell assistive technologies which content is part of a quote or citation from another source. This means that using the blockquote element for indentation or formatting purposes is strongly dissuaded, as it can mislead assistive technology.</p>
+                <p>To fix this violation, verify the blockquote is actually being used for a quote, and contains the necessary “cite” attribute. Or, use the widget to add the proper citation to the quote, or remove it altogether if necessary. </p>
+            </div>
+
+            <div>
+                <a href="guide.html">need more help? see the other tutorials</a>
+            </div>
+        </section>
     </body>
 </html>
 </main>

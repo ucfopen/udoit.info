@@ -1,0 +1,31 @@
+---
+layout: default
+title: "UDOIT: Accessibility Scanning Tool for Online Course Content"
+---
+
+<!-- roadmap was remade into help page -->
+{% include header.html activePage="installation"%}
+<main>
+<html>
+    <body>
+        <section class="page-width"><iframe class="tutvideo"></iframe></section>
+        <section class="flex-col page-width">
+            <div>
+                <h2>Lists should have Proper List Markup</h2>
+                <p>The “Lists should have Proper List Markup” error states that lists must be properly, programmatically formatted so that users with assistive technologies can navigate and understand the content within the list.</p>
+                <p>This means it is not enough to type an asterisk, dash, or numbers to indicate a list. The easiest way to create a properly formatted list is through using the list tool inside of your content editor. Each list should be defined as ordered or unordered, and each element within the list should be defined as a list item.</p>
+                <p>This error cannot be fixed within UDOIT, but lists can be edited and created within the Canvas text editor.</p>
+            </div>
+            <div>
+                <h3>To resolve this error:</h3>
+                <p>ensure your list is created as an HTML list, and defined as either an ordered list, using <code>&lt;ol&gt;</code> tags, or an unordered list, using <code>&lt;ul&gt;</code> tags. Then, confirm that the list items are sufficiently defined as such, using proper <code>&lt;li&gt;</code> tags around each item.</p>
+            </div>
+
+            <div>
+                <a href="guide.html">need more help? see the other tutorials</a>
+            </div>
+        </section>
+    </body>
+</html>
+</main>
+{% include footer.html img="/img/jfootawNOguyfind.svg" %}
