@@ -246,6 +246,7 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  font-weight: 200;
 
   /* jad: i had to add this because there was a side-scroll and it was bothering me SO BAD. */
   overflow-x: hidden;
@@ -292,8 +293,9 @@ header {
         font-weight: 600;
         text-transform: uppercase;
 
-        &:focus {
-          outline: none;
+        &:focus-visible {
+          outline: 2px var(--primary-green-dark);
+          outline-offset: 2px;
         }
       }
 
@@ -422,7 +424,7 @@ header {
     fill: var(--primary-color);
     /* filter: drop-shadow(2px 2px 4px var(--shadow-color)); */
   }
-} 
+}
 
 .accessible{
   color: #fff;
@@ -568,6 +570,22 @@ main {
   color: #016937;
 }
 
+a {
+  /* color: #599779; */
+  color: var(--primary-green-dark);
+  font-weight: 600;
+  text-decoration: none;
+
+  &:focus {
+    outline: 2px var(--primary-green-dark);
+    outline-offset: 2px;
+  }
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
 aside {
   margin-block-start: 2rem;
   margin-block-end: 2rem;
@@ -582,11 +600,6 @@ aside {
     font-weight: 600;
     /* border-block-end: 2px solid var(--text-color); */
     padding-block-end: .25rem;
-  }
-
-  a{
-    text-decoration: none;
-    color: #599779;
   }
 
   .aside-content {

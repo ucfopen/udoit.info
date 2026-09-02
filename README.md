@@ -15,3 +15,11 @@ Public-facing website for UDOIT information and documentation.
 1. Google Analytics to track traffic and usage.
 2. Thorough documentation and helps for installation.
 3. Quick and easy downloadable installers for the desktop version.
+
+Create a Gemfile by running `bundle init`.
+
+Update the Gemfile by adding the line `gem "jekyll"` and save.
+
+Run the `bundle` command to install jekyll.
+
+Once installed, run `bundle exec jekyll serve` to launch the live development server.
