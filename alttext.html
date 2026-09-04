@@ -1,0 +1,29 @@
+---
+layout: default
+title: "UDOIT: Accessibility Scanning Tool for Online Course Content"
+---
+
+{% include header.html activePage="installation"%}
+<main>
+<html>
+    <body>
+    <section class="flex-col page-width">
+        <div>
+            <h2>Images Should Have Alternative Text</h2>
+            <p>The “Images Should Have Alternative Text” states that images that convey important information should contain a text alternative with the same information.</p>
+            <p>This alternative text will make the information accessible to users with assistive technologies. However, if an image is just decorative, it should be indicated as such.</p>
+        </div>
+        <div>
+            <h3>To resolve this error:</h3>
+            <p>To fix this error, use the widget to add an “alt” attribute to the image, and create a short description of what is being described. You can also use an aria-label. Be sure to include any important words displayed on the image.</p>
+            <p>Alternatively, you can add the “presentation” role to images that are not being used to relay information. </p>
+        </div>
+
+        <div>
+            <a href="guide.html">need more help? see the other tutorials</a>
+        </div>
+    </section>
+    </body>
+</html>
+</main>
+{% include footer.html img="/img/jfootawNOguyfind.svg" %}
