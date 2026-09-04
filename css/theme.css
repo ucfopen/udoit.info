@@ -105,6 +105,19 @@
   .hero-main-image-container-dark img{
     display: none;
   }
+
+  .card:hover{
+    .card-light-img{
+      display: block;
+      width: 20%;
+      margin: 0 1em 0 1em;
+    }
+
+    .card-dark-img{
+      display: none;
+    }
+  }
+  
 }
 
 :root.dark {
@@ -126,6 +139,7 @@
   --gray: #D3D7DB;
   --gray-dark: #E2E2E2;
   --gray-darker: #F7F7F7;
+  --grey-darker: #f7f7f7;
   --black: #FFFFFF;
   
   /* --primary-green: #C5DFB7; */
@@ -183,7 +197,7 @@
   #udoit-logo-green {
     background-image: url('../img/udoit-logo-green.svg');
   }
-/* 
+ /* 
   p{
     color: var(--black);
   } */
@@ -201,6 +215,18 @@
   .hero-main-image-container-dark img{
     display: inline-block;
     margin-left: 1em;
+  }
+
+  .card:hover{
+    .card-dark-img{
+      display: block;
+      width: 20%;
+      margin: 0 1em 0 1em;
+    }
+
+    .card-light-img{
+      display: none;
+    }
   }
 }
 
@@ -604,7 +630,8 @@ aside {
 
   .aside-content {
     padding: 2rem;
-    box-shadow: -5px 0 5px -5px var(--white-smoke);
+    /* box-shadow: -5px 0 5px -5px var(--white-smoke); */
+    box-shadow: -5px 0 5px -5px var(--grey-darker);
     /* filter: drop-shadow(0 0 0.5rem whitesmoke); */
     /* position: fixed; */
     top: 5rem;
@@ -1016,14 +1043,6 @@ dialog[open]::backdrop {
   }
 }
 
-.card:hover{
-  img{
-    display: block;
-    width: 20%;
-    margin: 0 1em 0 1em;
-  }
-}
-
 .card-label{
   margin-top: .5em;
 
@@ -1147,6 +1166,7 @@ dialog[open]::backdrop {
 
 .help-infobutton{
   float: right;
+  flex-shrink: 0;
 }
 
 img{
@@ -1340,6 +1360,7 @@ was for cards  mid designing rip */
   border-radius: .25em;
 
   padding: .5em 1em;
+  margin: 0 0 1em 0;
 
   background-color: var(--off-white);
 
@@ -1419,6 +1440,7 @@ was for cards  mid designing rip */
 
   :nth-child(2){
     width: 80%;
+    margin: 2em;
   }
 }
 
@@ -1849,4 +1871,77 @@ card-label{
   .doc-card-long{
     margin: 0 2em;
   }
+}
+
+
+
+
+
+
+
+
+ucfooter{
+  font-family: var(--heading-font-family);
+  font-weight: bolder;
+  text-align: center;
+
+  margin-top: 2em;
+}
+
+#ucfootertext{
+  color: black;
+
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.ucfooter-bottom{
+  background: #FFEDA5;
+  color: black;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  border-block-start: 1px solid rgb(0,0,0, 50%);
+  border-block-end: 1px solid rgb(0,0,0, 50%);
+}
+
+#ucfooter-p{
+  margin: 0;
+}
+
+.ucfooterlink{
+  cursor: pointer;
+  text-decoration: none;
+
+  color: black;
+}
+
+
+.ucfooterStyle{
+  background-color: var(--background-color);
+  /* position:absolute; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* background-position: top center; */
+
+  width: 100%;
+  /* min-height: 35rem; */
+  
+  height: auto;
+
+  color: black;
+}
+
+.ucfooterborder{
+  width: auto;
+  /* border-block-start: 3px solid transparent; */
+  /* border-block-end: 3px solid transparent; */
+}
+
+ucfooter img{
+  background-color: #FFEDA5;
 }
